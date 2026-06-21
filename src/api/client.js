@@ -5,7 +5,7 @@
 // automatic silent refresh on 401.
 // ============================================================
 
-const BASE_URL = import.meta.env.VITE_API_URL || 'http://10.208.67.39:5000/api/v1';
+const BASE_URL = import.meta.env.VITE_API_URL || 'https://api-joraapps.vercel.app/api/v1';
 
 let accessToken = sessionStorage.getItem('adminAccessToken') || null;
 let refreshPromise = null;
