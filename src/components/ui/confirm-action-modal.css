@@ -1,0 +1,46 @@
+.cam {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 4px 0 0;
+}
+
+.cam__icon {
+  width: 52px; height: 52px;
+  border-radius: 50%;
+  background: var(--bg-overlay);
+  color: var(--text-secondary);
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 14px;
+}
+
+.cam__icon--danger {
+  background: var(--red-dim);
+  color: var(--red);
+}
+
+.cam__title {
+  font-size: 17px;
+  margin: 0 0 6px;
+  letter-spacing: -0.01em;
+}
+
+.cam__desc {
+  font-size: 13.5px;
+  color: var(--text-secondary);
+  line-height: 1.55;
+  margin: 0 0 18px;
+}
+
+.cam__reason {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 18px;
+}
+
+.cam__actions {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+}

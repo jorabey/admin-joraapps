@@ -1,0 +1,32 @@
+.page-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 28px 28px 20px;
+  flex-wrap: wrap;
+}
+
+.page-header__title {
+  font-size: 23px;
+  margin: 0 0 4px;
+  letter-spacing: -0.02em;
+}
+
+.page-header__subtitle {
+  font-size: 13.5px;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.page-header__right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 900px) {
+  .page-header { padding: 18px 16px 14px; }
+  .page-header__title { display: none; } /* shown in MobileTopBar instead */
+}

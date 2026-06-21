@@ -1,0 +1,30 @@
+.mtopbar {
+  display: none;
+  align-items: center;
+  height: calc(52px + var(--safe-top));
+  padding: calc(var(--safe-top) + 6px) 18px 6px;
+  background: rgba(12, 14, 17, 0.85);
+  backdrop-filter: blur(18px) saturate(160%);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 40;
+}
+
+.mtopbar__brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.mtopbar__title {
+  font-size: 17px;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+@media (max-width: 900px) {
+  .mtopbar { display: flex; }
+}

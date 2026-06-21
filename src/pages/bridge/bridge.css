@@ -1,0 +1,17 @@
+.bridge-live-indicator {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11.5px;
+  color: var(--text-tertiary);
+}
+
+.bridge-live-indicator svg {
+  color: var(--red);
+  animation: bridge-pulse 1.6s ease-in-out infinite;
+}
+
+@keyframes bridge-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
